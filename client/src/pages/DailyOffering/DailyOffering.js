@@ -5,7 +5,6 @@ class DailyOffering extends Component {
 
   state = {
     ShoppingCart: false,
-    
   }
 
   handleOnChange = event => {

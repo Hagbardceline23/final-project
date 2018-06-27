@@ -1,8 +1,9 @@
 import React from "react";
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
+import DailyOffering from "./pages/DailyOffering/DailyOffering";
 import Navbar from "./Components/Nav/Nav";
 import Home from "./pages/Home/Home";
-import DailyOffering from "./pages/DailyOffering/DailyOffering";
+import Home2 from "./pages/Home2/Home2";
 import "./App.css";
 
 
