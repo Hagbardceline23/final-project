@@ -4,13 +4,18 @@ var logger = require("morgan");
 var mongoose = require("mongoose");
 var PORT = process.env.PORT || 3001;
 var db = require("./models");
+var path = require("path");
 var app = express();
 
 app.use(logger("dev"));
 app.use(bodyParser.urlencoded({extended : true}));
 app.use(bodyParser.json());
-app.use(express.static("public"));
-mongoose.connect("mongodb://localhost/userDb");
+
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static("client/build"));
+}
+
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/userDb");
 
 //When the server starts create and save a new user document to the db
 
@@ -46,6 +51,10 @@ mongoose.connect("mongodb://localhost/userDb");
 
     });
   });
+
+  app.use(function(req,res) {
+    res.sendFile(path.join(__dirname, "./client/build/index.html"))
+  })
 
   app.listen(PORT, function(){
     console.log("app running on port" + PORT +"!")
