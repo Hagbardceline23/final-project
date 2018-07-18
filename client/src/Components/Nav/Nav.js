@@ -13,7 +13,7 @@ const Navbar = () => (
         <NavLink className="nav-link nav-style" to="/">Home</NavLink>
       </li>
       <li className="nav-item">
-        <NavLink className="nav-link nav-style" to="/Daily Offering">Daily Offering</NavLink>
+        <NavLink className="nav-link nav-style" to="/DailyOffering">Daily Offering</NavLink>
       </li>
       <li className="nav-item">
         <a className="nav-link nav-style" href="https://barcelona.lemonstand.com/shop">Shopping Cart</a>
