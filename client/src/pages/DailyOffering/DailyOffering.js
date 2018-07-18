@@ -54,7 +54,7 @@ class DailyOffering extends Component {
       </div>
       <p> Today's offer is a well balanced Bordeaux with hints of berry fruits and oak on the nose. It has a medium bodied texture with a slightly tanic finish. Critics have scored this wine 87 points and users have rated it 3.6 out of 5 stars. </p>
         <div className = "shoppingImage">
-        <a href="../shoppingCart">
+        <a href="https://barcelona.lemonstand.com/shop">
           <img src="./assets/images/shopping-cart.png" className="img-fluid"/>
           </a>
         </div>
