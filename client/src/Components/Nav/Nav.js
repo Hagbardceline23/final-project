@@ -14,7 +14,7 @@ const Navbar = () => (
       </li>
       <li className="nav-item">
         <NavLink className="nav-link nav-style" to=
-        "/DailyOffering">Daily Offering</NavLink>
+        "/daily-offering">Daily Offering</NavLink>
       </li>
       <li className="nav-item">
         <a className="nav-link nav-style" href="https://barcelona.lemonstand.com/shop">Shopping Cart</a>
